@@ -17,14 +17,26 @@
 <hr>
 <div class="row">
   <div *ngIf='radValue==0'>
-  This is 1.
+  <p>This is 1.</p>
   </div>
   <div *ngIf='radValue==1'>
-  This is 2.
+  <p>This is 2.</p>
   </div>
   <div *ngIf='radValue==2'>
-  This is 3.
+  <p>This is 3.</p>
   </div>
+</div>
+
+<div class="row">
+  <ng-template [ngIf]='radValue==0'>
+  <p>This is not 2 and 3.</p>
+  </ng-template>
+ <ng-template [ngIf]='radValue==1'>
+  <p>This is not 1 and 3.</p>
+  </ng-template>
+   <ng-template [ngIf]='radValue==2'>
+   <p>This is not 1 and 2.</p>
+</ng-template>
 </div>
 
 <div class="row">
