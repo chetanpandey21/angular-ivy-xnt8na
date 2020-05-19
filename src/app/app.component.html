@@ -1,4 +1,4 @@
- <div class="container">
+ <div class="container"><br>
   <div class="row">
    
     <div class="form-check form-check-inline">
@@ -14,28 +14,28 @@
     <label class="form-check-label" for="inlineRadio3">3</label>
   </div>
     </div>
-
+<hr>
 <div class="row">
   <div *ngIf='radValue==0'>
-  This Is 1.
+  This is 1.
   </div>
   <div *ngIf='radValue==1'>
-  This Is 2.
+  This is 2.
   </div>
   <div *ngIf='radValue==2'>
-  This Is 3.
+  This is 3.
   </div>
 </div>
 
 <div class="row">
   <ng-template [ngIf]='radValue==0'>
-  This Is 1.
+  This is not 2 and 3.
   </ng-template>
  <ng-template [ngIf]='radValue==1'>
-  This Is 2.
+  This is not 1 and 3.
   </ng-template>
    <ng-template [ngIf]='radValue==2'>
-  This Is 3.
+   This is not 2 and 3.
 </ng-template>
 </div>
     </div>
