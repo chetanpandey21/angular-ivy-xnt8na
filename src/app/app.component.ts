@@ -6,5 +6,9 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  
+  radValue = 0;
+  setRadio(val){
+this.radValue = val;
+
+  }
 }

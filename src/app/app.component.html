@@ -1,3 +1,24 @@
-<input type="text">
+<div class="container">
+    <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" (click)="setRadio(0)" id="inlineRadio1" value="option1" checked>
+    <label class="form-check-label" for="inlineRadio1">1</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" (click)="setRadio(1)" id="inlineRadio2" value="option2">
+    <label class="form-check-label" for="inlineRadio2">2</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" (click)="setRadio(2)" id="inlineRadio3" value="option3">
+    <label class="form-check-label" for="inlineRadio3">3</label>
+  </div>
 
-<button class="btn btn-primary">Click me!</button>
+  <div *ngIf='radValue==0'>
+  This Is 1.
+  </div>
+  <div *ngIf='radValue==1'>
+  This Is 2.
+  </div>
+  <div *ngIf='radValue==2'>
+  This Is 3.
+  </div>
+</div>
